@@ -47,6 +47,11 @@
             "command": "source ../../export_br_toolchain;make -j4 MOD=3"
         },
         {
+            "label": "build [remote lt]",
+            "type": "shell",
+            "command": "source ~/Work/embedded/export_rpi;make -j4 MOD=2"
+        },
+        {
             "label": "run [remote]",
             "command": "sh",
             "args": [

@@ -53,7 +53,7 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS)) $(INC_TARGET)
 
 CPPFLAGS ?= $(INC_FLAGS) -MMD -MP -g -D$(TARGET_USE) 
 
-LDFLAGS ?= $(LDFLAGS_TARGET) -lm -lpthread -lstdc++ -lsupc++ -lfreetype 
+LDFLAGS ?= $(LDFLAGS_TARGET) -lm -lpthread -lstdc++ -lsupc++ 
 
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
 	@echo "linking ..."

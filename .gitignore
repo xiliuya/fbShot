@@ -1,6 +1,10 @@
 #
 build
 
+dryrun.log
+targets.log
+configurationCache.log
+
 # Prerequisites
 *.d
 

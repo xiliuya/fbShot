@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "SDL",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                    "TARGET_USE_SDL"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu18",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "FB",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                    "TARGET_USE_FB"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu18",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

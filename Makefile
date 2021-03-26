@@ -1,4 +1,4 @@
-TARGET_EXEC ?= fbshot
+TARGET_EXEC ?= fbShot
 
 MOD ?= 1
 
@@ -59,7 +59,7 @@ $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
 	@echo "linking ..."
 	$(QUIET) $(CC) $(OBJS) -o $@ $(LDFLAGS)	
 	@echo "copy output ./"
-	$(QUIET) cp $(BUILD_DIR)/fbshot app/fbshot
+	$(QUIET) cp $(BUILD_DIR)/fbShot app/fbShot
 
 # assembly
 $(BUILD_DIR)/%.s.o: %.s

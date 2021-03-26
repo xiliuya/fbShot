@@ -1,0 +1,14 @@
+** create directory on target
+> mkdir -p .ssh
+
+** on host generate a new RSA key
+# ssh-keygen
+
+** copy the generated id_rsa from ~./ssh to target
+# scp id_rsa.pub root@targetip:/root/.ssh/authorized_keys
+
+** now it should be possible to ssh into target without password
+
+
+** remove ssh key for remote
+

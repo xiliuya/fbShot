@@ -1,0 +1,63 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make -j4",
+            "options": {
+                "tasksHere": {
+                    "display": false
+                }
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "make -j4;cd app;./famos;cd ..",
+            "options": {
+                "tasksHere": {
+                    "display": false
+                }
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make clean"
+        },
+        {
+            "label": "remote_debug_prepare",
+            "command": "sh",
+            "args": [
+                "scripts/remote_debug.sh"
+            ],
+            "type": "shell",
+            "options": {
+                "tasksHere": {
+                    "display": false
+                }
+            }
+        },
+        {
+            "label": "build [remote]",
+            "type": "shell",
+            "command": "source ../../export_br_toolchain;make -j4 MOD=3"
+        },
+        {
+            "label": "run [remote]",
+            "command": "sh",
+            "args": [
+                "scripts/remote_run.sh"
+            ],
+            "type": "shell",
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        }
+    ]
+}

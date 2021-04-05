@@ -1,0 +1,8 @@
+create a soft link to the bmp
+
+> ln -s /run/fb.bmp fb.bmp
+
+access fb with
+http://<ip from sealer>
+first trigger a screenhsot with
+http://<ip from sealer>/cgi-bin/shot.sh

@@ -57,7 +57,7 @@ int main(void)
 	} else {
 		printf("Failed to open target file\r\n");
 		close(fd);
-		return;
+		return -1;
 	}
 
 	// copy to bmp
@@ -79,4 +79,6 @@ int main(void)
 	delete[] buffer;
 
 	close (fd);
+
+	return 0;
 }

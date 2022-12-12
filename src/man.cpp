@@ -9,9 +9,9 @@
 
 #include "libbmp.h"
 
-//
-const uint16_t fbWidth = 800;
-const uint16_t fbHeight = 480;
+// 在我的机子上 分辨率为 1366*768 1376是通过 cat /dev/fb0 > fb0 文件的大小B / 4 / 高度得到的
+const uint16_t fbWidth = 1376;
+const uint16_t fbHeight = 768;
 
 
 const int rOffset = 2;
@@ -21,8 +21,8 @@ const int bOffset = 0;
 uint8_t * buffer;
 
 const char* devName = "/dev/fb0";
-const char* rawFileName = "/run/fbdump";
-const char* outputFileName = "/run/fb.bmp";
+const char* rawFileName = "/home/xiliuya/fbdump";
+const char* outputFileName = "/home/xiliuya/fb.bmp";
 
 BmpImg bmp(fbWidth, fbHeight);	
 
